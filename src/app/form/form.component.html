@@ -1,38 +1,44 @@
 <form (submit)="inscription()" [formGroup]=formulaire>
     <p>
         <label for="Nom"></label>
-        <input type="text" />     
+        <input type="text" formConroleName="nom"/>
+        <span [hidden]="formulaire.get('nom').valid" >
+            24 caratères maximum autorisé.
+        </span>
     </p>
     <p>
         <label for="prenom"></label>
-        <input type="text" /> 
+        <input type="text" formConroleName="prenom"/>
+        <span>
+            24 caratères maximum autorisé
+        </span> 
     </p>
     <p>
         <label for="email"></label>
-        <input type="email" /> 
+        <input type="email" formConroleName="email"/> 
     </p>
     <p>
         <label for="password"></label>
-        <input type="password" />         
+        <input type="password" formConroleName="password"/>         
     </p>
     <p>
         <label for="password"></label>
-        <input type="password" />         
+        <input type="password" formConroleName="password2"/>         
     </p>
     <p>
         <label for="adresse"></label>
-        <input type="text" />         
+        <input type="text" formConroleName="adresse"/>         
     </p>
     <p>
         <label for="portable"></label>
-        <input type="tel" />         
+        <input type="tel" formConroleName="portable"/>         
     </p>
     <p>
         <label for="fixe"></label>
-        <input type="tel" />         
+        <input type="tel" formConroleName="fixe"/>         
     </p>
     <p>
         <label for="Date de Naissance"></label>
-        <input type="Date" />
+        <input type="Date" formConroleName="DateDeNaissance"/>
     </p>
 </form>

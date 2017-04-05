@@ -3,7 +3,8 @@ import { FormControl, FormGroup, FormBuilder, Validator, Validators } from '@ang
 
 @Component({
     selector: 'formLogin',
-    templateUrl: './form.component.html'
+    templateUrl: './form.component.html',
+    StylesUrl: ['./form.component.css']
 })
 export class FormComponent{
     formulaire:FormGroup;

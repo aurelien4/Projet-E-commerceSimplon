@@ -9,8 +9,7 @@ import { PageNotFound } from "app/PageNotFound.component";
 import { PurchaseComponent } from "app/purchasePage/purchase.component";
 import { ProductListComponent } from "app/productPage/productlist.component";
 import { ProductComponent } from "app/productPage/product.component";
-import {  } from "mo"
-
+import { FormRoute } from "./form/form.route";
 @NgModule({
   declarations: [
     AppComponent,
